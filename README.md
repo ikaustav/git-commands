@@ -1,7 +1,7 @@
 
 ## git add the files size less than a number (e.g. 900000 bytes):
 ----------------------------------------------------------------
-var=\`du -a --max-depth=1 . | awk '$1*512 > 900000 {print $2}' | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g'\`; git add ${var%??}
+`var=\`du -a --max-depth=1 . | awk '$1*512 > 900000 {print $2}' | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g'\`; git add ${var%??}`
 
 
 ## List the files sizes according to their sizes in the whole git history
